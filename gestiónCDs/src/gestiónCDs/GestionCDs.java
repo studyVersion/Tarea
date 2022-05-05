@@ -19,8 +19,13 @@ public interface GestionCDs {
 	public static Document abrirDocumento(String fichero)throws Exception {
 		return null;
 	}
-	public void guardarDocumento(String fichero, Document documentoXML) throws Exception;
-	public Document cambiarElemento(Document documentoXML, Element elementoViejo, Element elementoNuevo);
-	public Document quitarElemento(Document documentoXML, Element elementoQuitar);
+	public static  void guardarDocumento(String fichero, Document documentoXML) throws Exception {
+	}
+	public static Document cambiarElemento(Document documentoXML, Element elementoViejo, Element elementoNuevo) throws Exception {
+		return null;
+	}
+	public static Document quitarElemento(Document documentoXML, Element elementoQuitar) {
+		return null;
+	}
 	public Document añadirElemento(Document documentoXMl, Element elementoAñadir);
 }

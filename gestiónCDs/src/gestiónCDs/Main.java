@@ -62,7 +62,15 @@ public class Main implements GestionCDs {
 	                	elemento1 = (Element)element.item(i);
 	                }
 	                file= quitarElemento(file,elemento1);
-	       case 4 : guardarDocumento(fichero,file);
+	                
+	       case 4 : System.out.println("Type the name of the Element to add");      
+	                String elementADD = sc.nextLine().trim();	
+	                NodeList añadir = file.getElementsByTagName("CD"); 
+	                for(int i=0; i< añadir.getLength(); i++) {
+	                	  elemento1 = file.createElement(elementADD );
+	              
+	                }
+	       case 5 : guardarDocumento(fichero,file);
 		}
 		
 		}	
@@ -123,6 +131,7 @@ public class Main implements GestionCDs {
                       // Element nuevo =  elementoNuevo;
 						
 						if(elementoViejo.getNodeName().equalsIgnoreCase(hijo.getNodeName())) {
+							String text = hijo.getTextContent();
 							/*String text = hijo.getTextContent();
 							CD.removeChild(hijo);
 							elementoNuevo.appendChild(documentoXML.createTextNode(text));
@@ -163,8 +172,28 @@ public class Main implements GestionCDs {
 	}
 
 
-	public Document añadirElemento(Document documentoXMl, Element elementoAñadir) {
-		// TODO Auto-generated method stub
+	public Document añadirElemento(Document docXML, Element elementoAñadir) {
+            NodeList lista = docXML.getElementsByTagName("CD");
+		
+		for(int i=0; i< lista.getLength(); i++) {
+			Node CD = lista.item(i);                // get lista items
+		  	if(CD.getNodeType() == Node.ELEMENT_NODE){
+		  		NodeList hijosCD = CD.getChildNodes();
+		  		 
+		  		  for (int j=0; j<hijosCD.getLength(); j++) {
+		  			  Node hijo = hijosCD.item(j);
+		  			    if(hijo.getNodeType()== Node.ELEMENT_NODE) {
+		  			    	if (elementoAñadir.getNodeName().equalsIgnoreCase(hijo.getNodeName())) {
+		  			    		
+		  			    		System.out.println("Type the element text");
+		  			    		String a = sc.nextLine();
+	  			    		elementoAñadir.appendChild(docXML.createTextNode(a));
+		                        staff.appendChild(salary);
+		  			    	}
+		  			    }
+		  		  }
+		  	}
+		}
 		return null;
 	}
 

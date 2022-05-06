@@ -40,13 +40,16 @@ public class Main implements GestionCDs {
 		Document file = abrirDocumento(fichero);
 		Element elemento1 = null;
 		Element elemento2 = null;
+		
 		while(true) {
 			int option =Integer.parseInt(sc.nextLine());
 	    switch (option) {
 	       
 	       case 1 : file = abrirDocumento(fichero);break;
-	       case 2 : 
-	    			file = cambiarElemento (file,elemento1,elemento2);break;
+	       
+	       case 2 : file = cambiarElemento (file,elemento1,elemento2);
+	                System.out.println("Element changed (press 5 to save)");break;
+	             
 	       
 	       case 3 :	System.out.println("Type the name of the Element to remove");
                     String elementR = sc.nextLine().trim().toUpperCase();		
@@ -101,11 +104,7 @@ public class Main implements GestionCDs {
 		t.transform(s,r);
 	}
 
-	public static Document cambiarElemento1(Document documentoXML, Element elementoViejo, Element elementoNuevo) throws Exception {
-		
-		return documentoXML;
-		
-	}
+	
 	public static Document cambiarElemento(Document documentoXML, Element elementoViejo, Element elementoNuevo) throws Exception {
 		FileInputStream input = new FileInputStream(fichero);
 		 System.out.println("Type the name of the Element to change");
@@ -121,25 +120,17 @@ public class Main implements GestionCDs {
 		  		 
 		  		  for (int j=0; j<hijosCD.getLength(); j++) {
 		  			  Node hijo = hijosCD.item(j);
-		  			  System.out.println(hijo.getNodeName());
-		  			    if(hijo.getNodeType()== Node.ELEMENT_NODE) {
-                        //if(hijo.getNodeType()== Node.ELEMENT_NODE) {
-                      // System.out.println(hijo.getNodeName());
-                      // Element viejo =  elementoViejo;
-                      // Element nuevo =  elementoNuevo;
-						
-						if(elementV.equalsIgnoreCase(hijo.getNodeName())) {
+		  			  
+		  			     if(hijo.getNodeType()== Node.ELEMENT_NODE) {
+                      
+						 if(elementV.equalsIgnoreCase(hijo.getNodeName())) {
 							elementoViejo = (Element) hijo;
 							String text = hijo.getTextContent();
-							/*String text = hijo.getTextContent();
-							CD.removeChild(hijo);
-							elementoNuevo.appendChild(documentoXML.createTextNode(text));
-							//elementoNuevo.setTextContent(text);
-							CD.appendChild(elementoNuevo);*/
+							
 							elementoNuevo= documentoXML.createElement(elementN);
 							elementoNuevo.appendChild(documentoXML.createTextNode(text));
 							
-							CD.replaceChild(elementoNuevo,hijo);
+							CD.replaceChild(elementoNuevo,elementoViejo);
 						}   
 						}
 					}

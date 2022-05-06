@@ -101,13 +101,17 @@ public class Main implements GestionCDs {
 		t.transform(s,r);
 	}
 
-
+	public static Document cambiarElemento1(Document documentoXML, Element elementoViejo, Element elementoNuevo) throws Exception {
+		
+		return documentoXML;
+		
+	}
 	public static Document cambiarElemento(Document documentoXML, Element elementoViejo, Element elementoNuevo) throws Exception {
 		FileInputStream input = new FileInputStream(fichero);
 		 System.out.println("Type the name of the Element to change");
-         String elementV = sc.nextLine().trim();
+         String elementV = sc.nextLine().trim().toUpperCase();
          System.out.println("Type the name: ");
-         String elementN = sc.nextLine().trim();
+         String elementN = sc.nextLine().trim().toUpperCase();
 		NodeList listaCDs = documentoXML.getElementsByTagName("CD");
 		
 		for(int i=0; i< listaCDs.getLength(); i++) {
@@ -117,6 +121,7 @@ public class Main implements GestionCDs {
 		  		 
 		  		  for (int j=0; j<hijosCD.getLength(); j++) {
 		  			  Node hijo = hijosCD.item(j);
+		  			  System.out.println(hijo.getNodeName());
 		  			    if(hijo.getNodeType()== Node.ELEMENT_NODE) {
                         //if(hijo.getNodeType()== Node.ELEMENT_NODE) {
                       // System.out.println(hijo.getNodeName());
@@ -133,7 +138,8 @@ public class Main implements GestionCDs {
 							CD.appendChild(elementoNuevo);*/
 							elementoNuevo= documentoXML.createElement(elementN);
 							elementoNuevo.appendChild(documentoXML.createTextNode(text));
-							CD.replaceChild(elementoViejo, elementoNuevo);
+							
+							CD.replaceChild(elementoNuevo,hijo);
 						}   
 						}
 					}

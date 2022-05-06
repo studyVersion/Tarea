@@ -1,655 +1,877 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <CATALOG>
-          
+              
+    
     
     <CD>
-                    
+                            
         
-        <TITLE>Empire Burlesque</TITLE>
-                    
+        
+        <TITULO>Empire Burlesque</TITULO>
+                            
     
+        
         
         <COUNTRY>USA</COUNTRY>
-                    
+                            
+        
         
         <COMPANY>Columbia</COMPANY>
-                    
+                            
+        
         
         <PRICE>10.90</PRICE>
-                    
+                            
+        
         
         <YEAR>1985</YEAR>
-                  
+                          
+    
     
     </CD>
-          
+              
+    
     
     <CD>
-                    
+                            
         
-        <TITLE>Hide your heart</TITLE>
-                    
+        
+        <TITULO>Hide your heart</TITULO>
+                            
     
         
+        
         <COUNTRY>UK</COUNTRY>
-                    
+                            
+        
         
         <COMPANY>CBS Records</COMPANY>
-                    
+                            
+        
         
         <PRICE>9.90</PRICE>
-                    
+                            
+        
         
         <YEAR>1988</YEAR>
-                  
+                          
+    
     
     </CD>
-          
+              
+    
     
     <CD>
-                    
+                            
         
-        <TITLE>Greatest Hits</TITLE>
-                    
+        
+        <TITULO>Greatest Hits</TITULO>
+                            
     
         
+        
         <COUNTRY>USA</COUNTRY>
-                    
+                            
+        
         
         <COMPANY>RCA</COMPANY>
-                    
+                            
+        
         
         <PRICE>9.90</PRICE>
-                    
+                            
+        
         
         <YEAR>1982</YEAR>
-                  
+                          
+    
     
     </CD>
-          
+              
+    
     
     <CD>
-                    
+                            
         
-        <TITLE>Still got the blues</TITLE>
-                    
+        
+        <TITULO>Still got the blues</TITULO>
+                            
     
         
+        
         <COUNTRY>UK</COUNTRY>
-                    
+                            
+        
         
         <COMPANY>Virgin records</COMPANY>
-                    
+                            
+        
         
         <PRICE>10.20</PRICE>
-                    
+                            
+        
         
         <YEAR>1990</YEAR>
-                  
+                          
+    
     
     </CD>
-          
+              
+    
     
     <CD>
-                    
+                            
         
-        <TITLE>Eros</TITLE>
-                    
+        
+        <TITULO>Eros</TITULO>
+                            
     
         
+        
         <COUNTRY>EU</COUNTRY>
-                    
+                            
+        
         
         <COMPANY>BMG</COMPANY>
-                    
+                            
+        
         
         <PRICE>9.90</PRICE>
-                    
+                            
+        
         
         <YEAR>1997</YEAR>
-                  
+                          
+    
     
     </CD>
-          
+              
+    
     
     <CD>
-                    
+                            
         
-        <TITLE>One night only</TITLE>
-                    
+        
+        <TITULO>One night only</TITULO>
+                            
     
         
+        
         <COUNTRY>UK</COUNTRY>
-                    
+                            
+        
         
         <COMPANY>Polydor</COMPANY>
-                    
+                            
+        
         
         <PRICE>10.90</PRICE>
-                    
+                            
+        
         
         <YEAR>1998</YEAR>
-                  
+                          
+    
     
     </CD>
-          
+              
+    
     
     <CD>
-                    
+                            
         
-        <TITLE>Sylvias Mother</TITLE>
-                    
+        
+        <TITULO>Sylvias Mother</TITULO>
+                            
     
         
+        
         <COUNTRY>UK</COUNTRY>
-                    
+                            
+        
         
         <COMPANY>CBS</COMPANY>
-                    
+                            
+        
         
         <PRICE>8.10</PRICE>
-                    
+                            
+        
         
         <YEAR>1973</YEAR>
-                  
+                          
+    
     
     </CD>
-          
+              
+    
     
     <CD>
-                    
+                            
         
-        <TITLE>Maggie May</TITLE>
-                    
+        
+        <TITULO>Maggie May</TITULO>
+                            
     
         
+        
         <COUNTRY>UK</COUNTRY>
-                    
+                            
+        
         
         <COMPANY>Pickwick</COMPANY>
-                    
+                            
+        
         
         <PRICE>8.50</PRICE>
-                    
+                            
+        
         
         <YEAR>1990</YEAR>
-                  
+                          
+    
     
     </CD>
-          
+              
+    
     
     <CD>
-                    
+                            
         
-        <TITLE>Romanza</TITLE>
-                    
+        
+        <TITULO>Romanza</TITULO>
+                            
     
         
+        
         <COUNTRY>EU</COUNTRY>
-                    
+                            
+        
         
         <COMPANY>Polydor</COMPANY>
-                    
+                            
+        
         
         <PRICE>10.80</PRICE>
-                    
+                            
+        
         
         <YEAR>1996</YEAR>
-                  
+                          
+    
     
     </CD>
-          
+              
+    
     
     <CD>
-                    
+                            
         
-        <TITLE>When a man loves a woman</TITLE>
-                    
+        
+        <TITULO>When a man loves a woman</TITULO>
+                            
     
         
+        
         <COUNTRY>USA</COUNTRY>
-                    
+                            
+        
         
         <COMPANY>Atlantic</COMPANY>
-                    
+                            
+        
         
         <PRICE>8.70</PRICE>
-                    
+                            
+        
         
         <YEAR>1987</YEAR>
-                  
+                          
+    
     
     </CD>
-          
+              
+    
     
     <CD>
-                    
+                            
         
-        <TITLE>Black angel</TITLE>
-                    
+        
+        <TITULO>Black angel</TITULO>
+                            
     
         
+        
         <COUNTRY>EU</COUNTRY>
-                    
+                            
+        
         
         <COMPANY>Mega</COMPANY>
-                    
+                            
+        
         
         <PRICE>10.90</PRICE>
-                    
+                            
+        
         
         <YEAR>1995</YEAR>
-                  
+                          
+    
     
     </CD>
-          
+              
+    
     
     <CD>
-                    
+                            
         
-        <TITLE>1999 Grammy Nominees</TITLE>
-                    
+        
+        <TITULO>1999 Grammy Nominees</TITULO>
+                            
     
         
+        
         <COUNTRY>USA</COUNTRY>
-                    
+                            
+        
         
         <COMPANY>Grammy</COMPANY>
-                    
+                            
+        
         
         <PRICE>10.20</PRICE>
-                    
+                            
+        
         
         <YEAR>1999</YEAR>
-                  
+                          
+    
     
     </CD>
-          
+              
+    
     
     <CD>
-                    
+                            
         
-        <TITLE>For the good times</TITLE>
-                    
+        
+        <TITULO>For the good times</TITULO>
+                            
     
         
+        
         <COUNTRY>UK</COUNTRY>
-                    
+                            
+        
         
         <COMPANY>Mucik Master</COMPANY>
-                    
+                            
+        
         
         <PRICE>8.70</PRICE>
-                    
+                            
+        
         
         <YEAR>1995</YEAR>
-                  
+                          
+    
     
     </CD>
-          
+              
+    
     
     <CD>
-                    
+                            
         
-        <TITLE>Big Willie style</TITLE>
-                    
+        
+        <TITULO>Big Willie style</TITULO>
+                            
     
         
+        
         <COUNTRY>USA</COUNTRY>
-                    
+                            
+        
         
         <COMPANY>Columbia</COMPANY>
-                    
+                            
+        
         
         <PRICE>9.90</PRICE>
-                    
+                            
+        
         
         <YEAR>1997</YEAR>
-                  
+                          
+    
     
     </CD>
-          
+              
+    
     
     <CD>
-                    
+                            
         
-        <TITLE>Tupelo Honey</TITLE>
-                    
+        
+        <TITULO>Tupelo Honey</TITULO>
+                            
     
         
+        
         <COUNTRY>UK</COUNTRY>
-                    
+                            
+        
         
         <COMPANY>Polydor</COMPANY>
-                    
+                            
+        
         
         <PRICE>8.20</PRICE>
-                    
+                            
+        
         
         <YEAR>1971</YEAR>
-                  
+                          
+    
     
     </CD>
-          
+              
+    
     
     <CD>
-                    
+                            
         
-        <TITLE>Soulsville</TITLE>
-                    
+        
+        <TITULO>Soulsville</TITULO>
+                            
     
+        
         
         <COUNTRY>Norway</COUNTRY>
-                    
+                            
+        
         
         <COMPANY>WEA</COMPANY>
-                    
+                            
+        
         
         <PRICE>7.90</PRICE>
-                    
+                            
+        
         
         <YEAR>1996</YEAR>
-                  
+                          
+    
     
     </CD>
-          
+              
+    
     
     <CD>
-                    
+                            
         
-        <TITLE>The very best of</TITLE>
-                    
+        
+        <TITULO>The very best of</TITULO>
+                            
     
         
+        
         <COUNTRY>UK</COUNTRY>
-                    
+                            
+        
         
         <COMPANY>Island</COMPANY>
-                    
+                            
+        
         
         <PRICE>8.90</PRICE>
-                    
+                            
+        
         
         <YEAR>1990</YEAR>
-                  
+                          
+    
     
     </CD>
-          
+              
+    
     
     <CD>
-                    
+                            
         
-        <TITLE>Stop</TITLE>
-                    
+        
+        <TITULO>Stop</TITULO>
+                            
     
         
+        
         <COUNTRY>UK</COUNTRY>
-                    
+                            
+        
         
         <COMPANY>A and M</COMPANY>
-                    
+                            
+        
         
         <PRICE>8.90</PRICE>
-                    
+                            
+        
         
         <YEAR>1988</YEAR>
-                  
+                          
+    
     
     </CD>
-          
+              
+    
     
     <CD>
-                    
+                            
         
-        <TITLE>Bridge of Spies</TITLE>
-                    
+        
+        <TITULO>Bridge of Spies</TITULO>
+                            
     
         
+        
         <COUNTRY>UK</COUNTRY>
-                    
+                            
+        
         
         <COMPANY>Siren</COMPANY>
-                    
+                            
+        
         
         <PRICE>7.90</PRICE>
-                    
+                            
+        
         
         <YEAR>1987</YEAR>
-                  
+                          
+    
     
     </CD>
-          
+              
+    
     
     <CD>
-                    
+                            
         
-        <TITLE>Private Dancer</TITLE>
-                    
+        
+        <TITULO>Private Dancer</TITULO>
+                            
     
         
+        
         <COUNTRY>UK</COUNTRY>
-                    
+                            
+        
         
         <COMPANY>Capitol</COMPANY>
-                    
+                            
+        
         
         <PRICE>8.90</PRICE>
-                    
+                            
+        
         
         <YEAR>1983</YEAR>
-                  
+                          
+    
     
     </CD>
-          
+              
+    
     
     <CD>
-                    
+                            
         
-        <TITLE>Midt om natten</TITLE>
-                    
+        
+        <TITULO>Midt om natten</TITULO>
+                            
     
         
+        
         <COUNTRY>EU</COUNTRY>
-                    
+                            
+        
         
         <COMPANY>Medley</COMPANY>
-                    
+                            
+        
         
         <PRICE>7.80</PRICE>
-                    
+                            
+        
         
         <YEAR>1983</YEAR>
-                  
+                          
+    
     
     </CD>
-          
+              
+    
     
     <CD>
-                    
+                            
         
-        <TITLE>Pavarotti Gala Concert</TITLE>
-                    
+        
+        <TITULO>Pavarotti Gala Concert</TITULO>
+                            
     
         
+        
         <COUNTRY>UK</COUNTRY>
-                    
+                            
+        
         
         <COMPANY>DECCA</COMPANY>
-                    
+                            
+        
         
         <PRICE>9.90</PRICE>
-                    
+                            
+        
         
         <YEAR>1991</YEAR>
-                  
+                          
+    
     
     </CD>
-          
+              
+    
     
     <CD>
-                    
+                            
         
-        <TITLE>The dock of the bay</TITLE>
-                    
+        
+        <TITULO>The dock of the bay</TITULO>
+                            
     
         
+        
         <COUNTRY>USA</COUNTRY>
-                    
+                            
+        
         
         <COMPANY>Stax Records</COMPANY>
-                    
+                            
+        
         
         <PRICE>7.90</PRICE>
-                    
+                            
+        
         
         <YEAR>1968</YEAR>
-                  
+                          
+    
     
     </CD>
-          
+              
+    
     
     <CD>
-                    
+                            
         
-        <TITLE>Picture book</TITLE>
-                    
+        
+        <TITULO>Picture book</TITULO>
+                            
     
+        
         
         <COUNTRY>EU</COUNTRY>
-                    
+                            
+        
         
         <COMPANY>Elektra</COMPANY>
-                    
+                            
+        
         
         <PRICE>7.20</PRICE>
-                    
+                            
+        
         
         <YEAR>1985</YEAR>
-                  
+                          
+    
     
     </CD>
-          
+              
+    
     
     <CD>
-                    
+                            
         
-        <TITLE>Red</TITLE>
-                    
+        
+        <TITULO>Red</TITULO>
+                            
     
+        
         
         <COUNTRY>UK</COUNTRY>
-                    
+                            
+        
         
         <COMPANY>London</COMPANY>
-                    
+                            
+        
         
         <PRICE>7.80</PRICE>
-                    
+                            
+        
         
         <YEAR>1987</YEAR>
-                  
+                          
+    
     
     </CD>
-          
+              
+    
     
     <CD>
-                    
+                            
         
-        <TITLE>Unchain my heart</TITLE>
-                    
+        
+        <TITULO>Unchain my heart</TITULO>
+                            
     
         
+        
         <COUNTRY>USA</COUNTRY>
-                    
+                            
+        
         
         <COMPANY>EMI</COMPANY>
-                    
+                            
+        
         
         <PRICE>8.20</PRICE>
-                    
+                            
+        
         
         <YEAR>1987</YEAR>
-                  
+                          
+        
         
         <ARTIST>qsdqs</ARTIST>
-                
+                        
+        
         <ARTIST>qsdqs</ARTIST>
-                
+                        
+        
         <ARTIST>qsdqs</ARTIST>
-                
+                        
+        
         <ARTIST>qsdqs</ARTIST>
-                
+                        
+        
         <ARTIST>qsdqs</ARTIST>
-                
+                        
+        
         <ARTIST>qsdqs</ARTIST>
-                
+                        
+        
         <ARTIST>qsdqs</ARTIST>
-                
+                        
+        
         <ARTIST>qsdqs</ARTIST>
-                
+                        
+        
         <ARTIST>qsdqs</ARTIST>
-                
+                        
+        
         <ARTIST>qsdqs</ARTIST>
-                
+                        
+        
         <ARTIST>qsdqs</ARTIST>
-                
+                        
+        
         <ARTIST>qsdqs</ARTIST>
-                
+                        
+        
         <ARTIST>qsdqs</ARTIST>
-                
+                        
+        
         <SOM>qsfqs</SOM>
-                
+                        
+        
         <SOM>qsfqs</SOM>
-                
+                        
+        
         <SOM>qsfqs</SOM>
-                
+                        
+        
         <SOM>qsfqs</SOM>
-                
+                        
+        
         <SOM>qsfqs</SOM>
-                
+                        
+        
         <SOM>qsfqs</SOM>
-                
+                        
+        
         <SOM>qsfqs</SOM>
-                
+                        
+        
         <SOM>qsfqs</SOM>
-                
+                        
+        
         <SOM>qsfqs</SOM>
-                
+                        
+        
         <SOM>qsfqs</SOM>
-                
+                        
+        
         <SOM>qsfqs</SOM>
-                
+                        
+        
         <SOM>qsfqs</SOM>
-                
+                        
+        
         <SOM>qsfqs</SOM>
-                
+                        
+        
         <SOM>qsfqs</SOM>
-                
+                        
+        
         <SOM>qsfqs</SOM>
-                
+                        
+        
         <SOM>qsfqs</SOM>
-                
+                        
+        
         <SOM>qsfqs</SOM>
-                
+                        
+        
         <SOM>qsfqs</SOM>
-                
+                        
+        
         <SOM>qsfqs</SOM>
-                
+                        
+        
         <SOM>qsfqs</SOM>
-                
+                        
+        
         <SOM>qsfqs</SOM>
-                
+                        
+        
         <SOM>qsfqs</SOM>
-                
+                        
+        
         <SOM>qsfqs</SOM>
-                
+                        
+        
         <SOM>qsfqs</SOM>
-                
+                        
+        
         <SOM>qsfqs</SOM>
-                
+                        
+        
         <SOM>qsfqs</SOM>
-            
+                    
+    
     </CD>
-        
+            
+
 
 </CATALOG>

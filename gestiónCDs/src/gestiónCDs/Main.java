@@ -29,9 +29,12 @@ public class Main implements GestionCDs {
 	
 	public static void main(String[] args) throws Exception {
 		
-		System.out.println("1. abrir Documento");
-		System.out.println("1. cambiar Elemento");
-		System.out.println("1. Guardar Ducumento");
+		System.out.println("1. Abrir Documento");
+		System.out.println("2. Cambiar Elemento");
+		System.out.println("3. Quitar Elemento");
+		System.out.println("4. Añadir Elemento");
+		System.out.println("5. Guardar Ducumento");
+		System.out.println("0. Salir");
 		//System.out.println("1. abrir Documento");
 		 
 		Document file = abrirDocumento(fichero);
@@ -42,35 +45,24 @@ public class Main implements GestionCDs {
 	    switch (option) {
 	       
 	       case 1 : file = abrirDocumento(fichero);break;
-	       case 2 : System.out.println("Type the name of the Element to change");
-                    String elementV = sc.nextLine().trim();
-                    System.out.println("Type the name: ");
-                    String elementN = sc.nextLine().trim();
-                    NodeList cambiarLista = file.getElementsByTagName(elementV);    
-                    for(int i= 0; i<cambiarLista.getLength();i++) {
-                    	elemento1 = (Element) cambiarLista.item(i);
-                    	elemento2 = file.createElement(elementN);
-                    }
-                    /*elemento1= file.createElement(elementV);
-			        elemento2 = file.createElement(elementN);*/
+	       case 2 : 
 	    			file = cambiarElemento (file,elemento1,elemento2);break;
 	       
 	       case 3 :	System.out.println("Type the name of the Element to remove");
-                    String elementR = sc.nextLine().trim();		
-                    NodeList element = file.getElementsByTagName(elementR);             // quitarElemento
+                    String elementR = sc.nextLine().trim().toUpperCase();		
+                    NodeList element = file.getElementsByTagName(elementR);             
 	                for(int i=0; i< element.getLength(); i++) {
 	                	elemento1 = (Element)element.item(i);
 	                }
 	                file= quitarElemento(file,elemento1);
+	                System.out.println("Element removed (press 5 to save)");break;
 	                
-	       case 4 : System.out.println("Type the name of the Element to add");      
-	                String elementADD = sc.nextLine().trim();	
-	                NodeList añadir = file.getElementsByTagName("CD"); 
-	                for(int i=0; i< añadir.getLength(); i++) {
-	                	  elemento1 = file.createElement(elementADD );
-	              
-	                }
-	       case 5 : guardarDocumento(fichero,file);
+	       case 4 : file= añadirElemento(file,elemento2);
+	                System.out.println("Element added (press 5 to save)");
+	               
+	                break;
+	       case 5 : guardarDocumento(fichero,file);break;
+	       case 6 : System.exit(0);
 		}
 		
 		}	
@@ -112,39 +104,42 @@ public class Main implements GestionCDs {
 
 	public static Document cambiarElemento(Document documentoXML, Element elementoViejo, Element elementoNuevo) throws Exception {
 		FileInputStream input = new FileInputStream(fichero);
+		 System.out.println("Type the name of the Element to change");
+         String elementV = sc.nextLine().trim();
+         System.out.println("Type the name: ");
+         String elementN = sc.nextLine().trim();
 		NodeList listaCDs = documentoXML.getElementsByTagName("CD");
 		
-		for (int i =0; i< listaCDs.getLength(); i++) { 
-			// grabar el node CD
-			
-				Node CD = listaCDs.item(i);
-				
-				if(CD.getNodeType()== Node.ELEMENT_NODE) {
-					
-					NodeList hijosCD = CD.getChildNodes();
-					
-					for(int j =0; j < hijosCD.getLength(); j++) {
-                        Node hijo =  hijosCD.item(i);
-                        if(hijo.getNodeType()== Node.ELEMENT_NODE) {
+		for(int i=0; i< listaCDs.getLength(); i++) {
+			Node CD = listaCDs.item(i);                // get lista items
+		  	if(CD.getNodeType() == Node.ELEMENT_NODE){
+		  		NodeList hijosCD = CD.getChildNodes();
+		  		 
+		  		  for (int j=0; j<hijosCD.getLength(); j++) {
+		  			  Node hijo = hijosCD.item(j);
+		  			    if(hijo.getNodeType()== Node.ELEMENT_NODE) {
+                        //if(hijo.getNodeType()== Node.ELEMENT_NODE) {
                       // System.out.println(hijo.getNodeName());
                       // Element viejo =  elementoViejo;
                       // Element nuevo =  elementoNuevo;
 						
-						if(elementoViejo.getNodeName().equalsIgnoreCase(hijo.getNodeName())) {
+						if(elementV.equalsIgnoreCase(hijo.getNodeName())) {
+							elementoViejo = (Element) hijo;
 							String text = hijo.getTextContent();
 							/*String text = hijo.getTextContent();
 							CD.removeChild(hijo);
 							elementoNuevo.appendChild(documentoXML.createTextNode(text));
 							//elementoNuevo.setTextContent(text);
 							CD.appendChild(elementoNuevo);*/
-							Node a = (Node)elementoNuevo;
-							CD.replaceChild(hijo, a);
+							elementoNuevo= documentoXML.createElement(elementN);
+							elementoNuevo.appendChild(documentoXML.createTextNode(text));
+							CD.replaceChild(elementoViejo, elementoNuevo);
 						}   
 						}
 					}
 				}
-			}
 			
+		}
 		
 		return documentoXML;
 	}
@@ -172,29 +167,21 @@ public class Main implements GestionCDs {
 	}
 
 
-	public Document añadirElemento(Document docXML, Element elementoAñadir) {
-            NodeList lista = docXML.getElementsByTagName("CD");
-		
-		for(int i=0; i< lista.getLength(); i++) {
-			Node CD = lista.item(i);                // get lista items
-		  	if(CD.getNodeType() == Node.ELEMENT_NODE){
-		  		NodeList hijosCD = CD.getChildNodes();
-		  		 
-		  		  for (int j=0; j<hijosCD.getLength(); j++) {
-		  			  Node hijo = hijosCD.item(j);
-		  			    if(hijo.getNodeType()== Node.ELEMENT_NODE) {
-		  			    	if (elementoAñadir.getNodeName().equalsIgnoreCase(hijo.getNodeName())) {
-		  			    		
-		  			    		System.out.println("Type the element text");
-		  			    		String a = sc.nextLine();
-	  			    		elementoAñadir.appendChild(docXML.createTextNode(a));
-		                        staff.appendChild(salary);
+	public static Document añadirElemento(Document docXML, Element elementoAñadir) {
+            NodeList listaCDs = docXML.getElementsByTagName("CD");
+            System.out.println("Type the name of the Element to add");      
+            String elementADD = sc.nextLine().trim().toUpperCase();	
+            System.out.println("Type the element text");
+			String a = sc.nextLine().trim();
+		for(int i=0; i< listaCDs.getLength(); i++) {
+			Node CD = listaCDs.item(i);                // get lista items
+			elementoAñadir = docXML.createElement(elementADD);
+			elementoAñadir.appendChild(docXML.createTextNode(a));
+		    CD.appendChild(elementoAñadir);
+		         
 		  			    	}
-		  			    }
-		  		  }
-		  	}
-		}
-		return null;
+		
+		return docXML;
 	}
 
 }

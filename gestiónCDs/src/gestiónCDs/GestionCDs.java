@@ -27,5 +27,7 @@ public interface GestionCDs {
 	public static Document quitarElemento(Document documentoXML, Element elementoQuitar) {
 		return null;
 	}
-	public Document añadirElemento(Document documentoXMl, Element elementoAñadir);
+	public static Document añadirElemento(Document documentoXMl, Element elementoAñadir) {
+		return null;
+	}
 }
